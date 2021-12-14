@@ -1,7 +1,7 @@
 import express from 'express'
-import recipes from './recipes-data'
-import grains from './grains-data'
-import reviews from './reviews-data'
+import recipes from './data/recipes-data'
+import grains from './data/grains-data'
+import reviews from './data/reviews-data'
 const app = express()
 
 app.set('port', process.env.PORT || 3000)
