@@ -25,113 +25,13 @@ I found this project to be a fun challenge and really enjoyed learning some back
 ## Endpoints  
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
-| `http://localhost:3000/api/v1/grains/` | GET | not needed | Array of all existing grains: `[{
-        "id": "OX6eHvFFc8",
-        "name": "Turkey Red",
-        "classification": "Hard Red Winter Wheat",
-        "protein": 13.5,
-        "hasGluten": true,
-        "pricePerLb": 3,
-        "grownIn": "Colorado",
-        "isOrganic": true,
-        "flavor": "Malty and Sweet",
-        "texture": "Fine and slightly sandy.",
-        "bakingCharacteristics": "Performs well in bread, pizza dough, crackers, cookies, pie crusts, muffins, and biscuits. Truly is an all-purpose whole wheat.",
-        "history": "It was brought from Crimea to Kansas by Mennonite farmers in the 1870's.",
-        "inStock": true,
-        "img": "./images/turkey.jpg"
-    }]` |
-    | `http://localhost:3000/api/v1/grains/:id` | GET | not needed | Object of a specific grain by Id: `{
-        "id": "OX6eHvFFc8",
-        "name": "Turkey Red",
-        "classification": "Hard Red Winter Wheat",
-        "protein": 13.5,
-        "hasGluten": true,
-        "pricePerLb": 3,
-        "grownIn": "Colorado",
-        "isOrganic": true,
-        "flavor": "Malty and Sweet",
-        "texture": "Fine and slightly sandy.",
-        "bakingCharacteristics": "Performs well in bread, pizza dough, crackers, cookies, pie crusts, muffins, and biscuits. Truly is an all-purpose whole wheat.",
-        "history": "It was brought from Crimea to Kansas by Mennonite farmers in the 1870's.",
-        "inStock": true,
-        "img": "./images/turkey.jpg"
-    }` |
-| `http://localhost:3000/api/v1/recipes/` | GET | not needed | Array of all existing recipes: `[{
-        "id": "RUTCHm1gtW",
-        "name": "Pancakes",
-        "category": "Maize",
-        "isVegan": false,
-        "isGlutenFree": false,
-        "yield": "4-6 pancakes",
-        "time": "30 min",
-        "ingredients": [
-            "1 1/2 cups blue, green, or red cornmeal",
-            "1 tsp salt",
-            "1 1/2 cups boiling water",
-            "1/4 cup milk, maybe more",
-            "2 eggs",
-            "2 Tbsp vegetable oil",
-            "1 tsp vanilla",
-            "1/2 cup pinenuts",
-            "butter and maple for yumming up"
-        ],
-        "directions": "Mix the cornmeal, salt, and boiling water together in a bowl and let sit for 20 min to soften the corn. Add everything else and mix together. Cook on a cast iron skillet on low to medium heat. Be sure to cook them thoroughly, otherwise they will be mushy inside. Slather with butter and maple and enjoy."
-    }]` |
-| `http://localhost:3000/api/v1/recipes/:id` | GET | not needed | Object of a specific recipe by Id: `{
-        "id": "RUTCHm1gtW",
-        "name": "Pancakes",
-        "category": "Maize",
-        "isVegan": false,
-        "isGlutenFree": false,
-        "yield": "4-6 pancakes",
-        "time": "30 min",
-        "ingredients": [
-            "1 1/2 cups blue, green, or red cornmeal",
-            "1 tsp salt",
-            "1 1/2 cups boiling water",
-            "1/4 cup milk, maybe more",
-            "2 eggs",
-            "2 Tbsp vegetable oil",
-            "1 tsp vanilla",
-            "1/2 cup pinenuts",
-            "butter and maple for yumming up"
-        ],
-        "directions": "Mix the cornmeal, salt, and boiling water together in a bowl and let sit for 20 min to soften the corn. Add everything else and mix together. Cook on a cast iron skillet on low to medium heat. Be sure to cook them thoroughly, otherwise they will be mushy inside. Slather with butter and maple and enjoy."
-    }` |
-    | `http://localhost:3000/api/v1/reviews/` | GET | not needed | Array of all existing reviews: `[{
-        "id": "0MxzViR3vK",
-        "name": "Rye",
-        "customerName": "Happy Baker",
-        "date": "01/01/22",
-        "rating": 4,
-        "note": "Yum!"
-    }]` |
-| `http://localhost:3000/api/v1/reviews/:id` | GET | not needed | Object of a specific review by Id: `{
-        "id": "0MxzViR3vK",
-        "name": "Rye",
-        "customerName": "Happy Baker",
-        "date": "01/01/22",
-        "rating": 4,
-        "note": "Yum!"
-    }` |
-| `http://localhost:3000/api/v1/reviews/` | POST | {
-    "name": <String>,
-    "customerName": <String>,
-    "date": <String>,
-    "rating": <Number>,
-    "note": <String>
-} | {
-    "message": "New review was successfully added!",
-    "newReview": {
-        "id": "0MxzViR3vK",
-        "name": "Rye",
-        "customerName": "Happy Baker",
-        "date": "01/01/22",
-        "rating": 4,
-        "note": "Yum!"
-    }
-} |
-| `http://localhost:3000/api/v1/reviews` | DELETE | { "id": <String> } | { "message": "Review with id of 0MxzViR3vK was successfully deleted." } |  
+| `http://localhost:3000/api/v1/grains/` | GET | not needed | Array of all existing grains: `[{ "id": "OX6eHvFFc8", "name": "Turkey Red", "classification": "Hard Red Winter Wheat", "protein": 13.5, "hasGluten": true, "pricePerLb": 3, "grownIn": "Colorado", "isOrganic": true, "flavor": "Malty and Sweet", "texture": "Fine and slightly sandy.", "bakingCharacteristics": "...", "history": "...", "inStock": true,"img": "./images/turkey.jpg" }]` |
+| `http://localhost:3000/api/v1/grains/:id` | GET | not needed | Object of a specific grain by Id: `{ "id": "OX6eHvFFc8", "name": "Turkey Red", "classification": "Hard Red Winter Wheat", "protein": 13.5, "hasGluten": true, "pricePerLb": 3, "grownIn": "Colorado", "isOrganic": true, "flavor": "Malty and Sweet", "texture": "Fine and slightly sandy.", bakingCharacteristics": "...", "history": "...", "inStock": true, "img": "./images/turkey.jpg" }` |
+| `http://localhost:3000/api/v1/recipes/` | GET | not needed | Array of all existing recipes: `[{ "id": "RUTCHm1gtW", "name": "Pancakes", "category": "Maize", "isVegan": false, "isGlutenFree": false, "yield": "4-6 pancakes", "time": "30 min", "ingredients": ["1 1/2 cups blue, green, or red cornmeal", "1 tsp salt", "1 1/2 cups boiling water", "1/4 cup milk, maybe more", "2 eggs", "2 Tbsp vegetable oil", "1 tsp vanilla", "1/2 cup pinenuts", "butter and maple for yumming up"], "directions": "..." }]` |
+| `http://localhost:3000/api/v1/recipes/:id` | GET | not needed | Object of a specific recipe by Id: `{ "id": "RUTCHm1gtW", "name": "Pancakes", "category": "Maize", "isVegan": false, "isGlutenFree": false, "yield": "4-6 pancakes", "time": "30 min", "ingredients": ["..."], "directions": "..." }` |
+| `http://localhost:3000/api/v1/reviews/` | GET | not needed | Array of all existing reviews: `[{ "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }]` |
+| `http://localhost:3000/api/v1/reviews/:id` | GET | not needed | Object of a specific review by Id: `{ "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }` |
+| `http://localhost:3000/api/v1/reviews/` | POST | { "name": <'String'>, "customerName": <'String'>, "date": <'String'>, "rating": <'Number'>, "note": <'String'> } | { "message": "New review was successfully added!", "newReview": { "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }} |
+| `http://localhost:3000/api/v1/reviews` | DELETE | { "id": <'String'> } | { "message": "Review with id of 0MxzViR3vK was successfully deleted." } |  
 
 Note: All of these endpoints will return semantic errors if something is wrong with the request.
