@@ -31,7 +31,7 @@ I found this project to be a fun challenge and really enjoyed learning some back
 | `http://localhost:3000/api/v1/recipes/:id` | GET | not needed | Object of a specific recipe by Id: `{ "id": "RUTCHm1gtW", "name": "Pancakes", "category": "Maize", "isVegan": false, "isGlutenFree": false, "yield": "4-6 pancakes", "time": "30 min", "ingredients": ["..."], "directions": "..." }` |
 | `http://localhost:3000/api/v1/reviews/` | GET | not needed | Array of all existing reviews: `[{ "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }]` |
 | `http://localhost:3000/api/v1/reviews/:id` | GET | not needed | Object of a specific review by Id: `{ "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }` |
-| `http://localhost:3000/api/v1/reviews/` | POST | { "name": <'String'>, "customerName": <'String'>, "date": <'String'>, "rating": <'Number'>, "note": <'String'> } | { "message": "New review was successfully added!", "newReview": { "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }} |
-| `http://localhost:3000/api/v1/reviews` | DELETE | { "id": <'String'> } | { "message": "Review with id of 0MxzViR3vK was successfully deleted." } |  
+| `http://localhost:3000/api/v1/reviews/` | POST | `{ "name": <'String'>, "customerName": <'String'>, "date": <'String'>, "rating": <'Number'>, "note": <'String'> }` | `{ "message": "New review was successfully added!", "newReview": { "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "01/01/22", "rating": 4, "note": "Yum!" }}` |
+| `http://localhost:3000/api/v1/reviews` | DELETE | `{ "id": <'String'> }` | `{ "message": "Review with id of 0MxzViR3vK was successfully deleted." }` |  
 
 Note: All of these endpoints will return semantic errors if something is wrong with the request.
