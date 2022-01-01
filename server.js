@@ -1,8 +1,11 @@
 import express from 'express'
+import { nanoid } from "nanoid"
 import recipes from './data/recipes-data'
 import grains from './data/grains-data'
 import reviews from './data/reviews-data'
+
 const app = express()
+app.use(express.json());
 
 app.set('port', process.env.PORT || 3000)
 app.locals.grains = grains
@@ -31,6 +34,36 @@ app.get('/api/v1/:type/:id', (req, res) => {
         res.status(404).send(`'${type}' is an endpoint, however '${id}' does not match any of the ids within '${type}'.`)
     }
     res.status(200).json(reqItem)
+})
+
+app.post('/api/v1/reviews', (req, res) => {
+    const id = nanoid(10)
+    const review = req.body
+    let correct = true
+
+    for (let requiredParameter of ['name', 'customerName', 'date', 'rating', 'note']) {
+        if (!review[requiredParameter]) {
+            correct = false
+            res.status(422).send({ error: `Expected format: { name: <String>, customerName: <String>, date: <String>, rating: <Number>, note: <String> }. You're missing a "${requiredParameter}" property.` })
+        }
+    }
+
+    if (correct) {
+        const { name, customerName, date, rating, note } = review
+        app.locals.reviews.push({ id, name, customerName, date, rating, note })
+        res.status(201).send({ message: 'New review was successfully added!', newReview: { id, name, customerName, date, rating, note } })
+    }
+})
+
+app.delete('/api/v1/reviews', (req, res) => {
+    const id = req.body.id
+    if (app.locals.reviews.find(review => review.id === id) === undefined) {
+        res.status(422).send({ error: `Expected format: { id: <String> }. No review was found matching the id: ${id}.`})
+    }
+
+    const filteredReviews = app.locals.reviews.filter(review => review.id !== id)
+    app.locals.reviews = filteredReviews
+    res.status(200).send({ message: `Review with id of ${id} was successfully deleted.` })
 })
 
 app.listen(app.get('port'), () => {
