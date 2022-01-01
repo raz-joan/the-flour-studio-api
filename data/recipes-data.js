@@ -77,6 +77,17 @@ const recipes = [
         time: "1 hour",
         ingredients: ["3 cups einkorn, emmer, kamut, or spelt flour", "1 Tbsp baking powder", "1/2 tsp baking soda", "1/2 tsp salt", "1 1/2 tsp cinnamon", "1 1/4 cups milk, possibly more", "2 extra large eggs, lightly beaten", "2 sticks butter, melted", "2 cups diced fruit, your choice", "1 - 1 1/2 cups sugar"],
         directions: "Sift the dry ingredients together in a large bowl. In a medium bowl, combine the milk, eggs, and butter. Make a well in the dries, pour in the wets, and stir together until just combined. (Don't overmix, some clumps are okay. Add more milk if it's too dry.) Add the fruit and sugar and still gently to combine. Line a muffin tin with paper liners and fill each 3/4 full. Bake at 375F for 25 - 30 minutes, until a toothpick comes out clean and the tops are nicely browned."
+    },
+    {
+        id: nanoid(10),
+        name: "Spiced Apple Scones",
+        category: "Ancient Wheat",
+        isVegan: false,
+        isGlutenFree: false,
+        yield: "Eight scones.",
+        time: "1 hour",
+        ingredients: ["2 cups einkorn, emmer, kamut, or spelt flour", "1/2 cup sugar", "1/2 tsp salt", "2 1/2 tsp baking powder", "1 Tbsp cinnamon", "1 stick frozen, unsalted butter", "1/2 cup buttermilk or heavy cream", "1 large egg", "1 1/2 tsp vanilla", "1 medium apple peeled and diced"],
+        directions: "In a large bowl, whisk together flour, sugar, salt, baking powder, and cinnamon. Grade the frozen butter into the bowl. Combine to make pea sized crumbs. Put in the fridge while mixing the wet ingredients. In a medium bowl, mis together the heavy cream, egg, and vanilla. Pour the wets into the large bowl and mix until just combined. Fold in the diced apple. On a floured surface, pour out the sticky dough. Using your hands press into a disc about 8 inches in diameter. Using a knife, cut into 8 wedges. Place on a lined baking sheet and put in the fridge. Preheat the oven to 425F. Once the oven is to temperature, remove the scones from the fridge and lightly brush with heavy cream and sprinkle with sugar. Bake for 20 - 25 minutes, until the edges start to brown."
     }
 ]
 
