@@ -207,7 +207,7 @@ const grains = [
         bakingCharacteristics: "It is gluten-free and can be used whole to make porridge or as flour in pancakes, muffins, and cookies.",
         history: "Buckwheat was first domesticated about 8,000 years ago in Southeast Asia. These small, triangular grain-like seeds are not related to wheat, but instead to sorrel and rhubarb.",
         inStock: true,
-        img: "./images/buckwheat.HEIC"
+        img: "./images/buckwheat.png"
     },
     {
         id: nanoid(10),
@@ -223,7 +223,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico. Blue corn is a type of flint corn and has long been cultivated by the Hopi in the Southwest United States.",
         inStock: true,
-        img: "./images/blue.HEIC"
+        img: "./images/blue.png"
     },
     {
         id: nanoid(10),
@@ -239,7 +239,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico.",
         inStock: true,
-        img: "./images/green.HEIC"
+        img: "./images/green.png"
     },
     {
         id: nanoid(10),
@@ -255,7 +255,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico.",
         inStock: true,
-        img: "./images/red.HEIC"
+        img: "./images/red.png"
     },
     {
         id: nanoid(10),
@@ -271,7 +271,7 @@ const grains = [
         bakingCharacteristics: "Millet adds a fun, snap-crackle-pop texture to baked goods. Add it to cookies, muffins, pancakes, breads, etc. It can also be cooked and eaten whole in a salad, etc.",
         history: "It is indigenous to many parts of the world and has been cultivated since about 7,000 years before present.",
         inStock: true,
-        img: "./images/millet.HEIC"
+        img: "./images/millet.png"
     },
     {
         id: nanoid(10),
@@ -287,7 +287,7 @@ const grains = [
         bakingCharacteristics: "It is a good source of magnesium, phosphorus, selenium, thiamine, niacin, vitamin B6, manganese, and is high in dietary fiber. It can be used in cookies, pancakes, muffins, breads, etc.",
         history: "It was first domesticated in the Yangtze River basin in China about 11,000 years before present.",
         inStock: true,
-        img: "./images/rice.HEIC"
+        img: "./images/rice.png"
     },
     {
         id: nanoid(10),
@@ -303,7 +303,7 @@ const grains = [
         bakingCharacteristics: "They are high in protein, dietary fiber, B-vitamins, and other essential minerals. Performs well in cookies, pancakes, and muffins.",
         history: "Oats were first grown in the Fertile Crescent, but are widely grown in Northwestern Europe today.",
         inStock: true,
-        img: "./images/oat.HEIC"
+        img: "./images/oat.png"
     },
     {
         id: nanoid(10),
@@ -319,7 +319,7 @@ const grains = [
         bakingCharacteristics: "Performs well in injera, pancakes, crusts, cookies, muffins, etc.",
         history: "It is an ancient grain from Ethiopia and Eritrea, and comprises the staple grain of their cuisines. It is a fine grain—about the size of a poppy seed—that comes in a variety of colors, from white and red to dark brown.",
         inStock: true,
-        img: "./images/teff.HEIC"
+        img: "./images/teff.png"
     }
 ]
 
