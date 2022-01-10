@@ -1,11 +1,13 @@
 import express from 'express'
+import cors from 'cors'
 import { nanoid } from "nanoid"
-import recipes from './data/recipes-data'
-import grains from './data/grains-data'
-import reviews from './data/reviews-data'
+import recipes from './data/recipes-data.js'
+import grains from './data/grains-data.js'
+import reviews from './data/reviews-data.js'
 
 const app = express()
-app.use(express.json());
+app.use(express.json())
+app.use(cors())
 
 app.set('port', process.env.PORT || 3000)
 app.locals.grains = grains
