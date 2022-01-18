@@ -1,11 +1,13 @@
 import express from 'express'
+import cors from 'cors'
 import { nanoid } from "nanoid"
-import recipes from './data/recipes-data'
-import grains from './data/grains-data'
-import reviews from './data/reviews-data'
+import recipes from './data/recipes-data.js'
+import grains from './data/grains-data.js'
+import reviews from './data/reviews-data.js'
 
 const app = express()
-app.use(express.json());
+app.use(express.json())
+app.use(cors())
 
 app.set('port', process.env.PORT || 3000)
 app.locals.grains = grains
@@ -21,7 +23,7 @@ app.get('/api/v1/:type', (req, res) => {
     if (type !== 'grains' && type !== 'recipes' && type !== 'reviews') {
         res.status(404).send(`'${type}' is not an endpoint. Please try '/api/v1/grains' or '/api/v1/recipes' or '/api/v1/reviews'.`)
     }
-    res.status(200).json(app.locals[type])
+    res.status(200).json({ [type]: app.locals[type] })
 })
 
 app.get('/api/v1/:type/:id', (req, res) => {
@@ -33,7 +35,7 @@ app.get('/api/v1/:type/:id', (req, res) => {
     if (!reqItem) {
         res.status(404).send(`'${type}' is an endpoint, however '${id}' does not match any of the ids within '${type}'.`)
     }
-    res.status(200).json(reqItem)
+    res.status(200).json({ item: reqItem })
 })
 
 app.post('/api/v1/reviews', (req, res) => {
