@@ -1,6 +1,8 @@
 # Mod 2: Final Solo Project: The Flour Studio API  
 
-Authored by: [Joan Rasmussen](https://github.com/raz-joan)    
+Authored by: [Joan Rasmussen](https://github.com/raz-joan)  
+
+Find the frontend repo [here](https://github.com/raz-joan/the-flour-studio-ui)
 
 ## Overview  
 This repo was written as the backend server to fulfill the requirements of the [Showcase project](https://frontend.turing.edu/projects/module-3/showcase.html), such that you could make an application based on the data from your chosen API. This API provides data on grains and recipes, as well as, user reviews, which can be added or deleted.  
