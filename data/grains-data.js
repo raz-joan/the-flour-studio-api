@@ -286,7 +286,7 @@ const grains = [
         texture: "Fine and sandy.",
         bakingCharacteristics: "It is a good source of magnesium, phosphorus, selenium, thiamine, niacin, vitamin B6, manganese, and is high in dietary fiber. It can be used in cookies, pancakes, muffins, breads, etc.",
         history: "It was first domesticated in the Yangtze River basin in China about 11,000 years before present.",
-        inStock: true,
+        inStock: false,
         img: 'https://user-images.githubusercontent.com/80644408/149955285-69fd21d2-95d9-4893-b4f7-14835bac3d3e.png'
     },
     {
