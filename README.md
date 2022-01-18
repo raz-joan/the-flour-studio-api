@@ -34,4 +34,5 @@ I found this project to be a fun challenge and really enjoyed learning some back
 | `http://localhost:3000/api/v1/reviews/` | POST | `{ "name": <'String'>, "customerName": <'String'>, "date": <'String'>, "rating": <'Number'>, "note": <'String'> }` | Response body: `{ "message": "New review was successfully added!", "newReview": { "id": "0MxzViR3vK", "name": "Rye", "customerName": "Happy Baker", "date": "2022/01/01", "rating": 4, "note": "Yum!" }}` |
 | `http://localhost:3000/api/v1/reviews` | DELETE | `{ "id": <'String'> }` | Response body: `{ "message": "Review with id of 0MxzViR3vK was successfully deleted." }` |  
 
+
 Note: All of these endpoints will return semantic errors if something is wrong with the request.
