@@ -1,4 +1,4 @@
-# Mod 2: Final Solo Project: The Flour Studio API  
+# Mod 3: Final Solo Project: The Flour Studio API  
 
 Authored by: [Joan Rasmussen](https://github.com/raz-joan)  
 
