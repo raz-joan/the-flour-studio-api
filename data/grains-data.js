@@ -15,7 +15,7 @@ const grains = [
         bakingCharacteristics: "Performs well in bread, pizza dough, crackers, cookies, pie crusts, muffins, and biscuits. Truly is an all-purpose whole wheat.",
         history: "It was brought from Crimea to Kansas by Mennonite farmers in the 1870's.",
         inStock: true,
-        img: "./images/turkey.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954650-1c566af8-ae56-47b7-a0ed-ee33f0e2311e.jpg'
     },
     {
         id: nanoid(10),
@@ -31,7 +31,7 @@ const grains = [
         bakingCharacteristics: "Performs well in bread, pizza dough, crackers, cookies, pie crusts, muffins, and biscuits. Truly is an all-purpose whole wheat.",
         history: "It first came to the U.S. from Canada in the mid 1800’s.",
         inStock: true,
-        img: "./images/redFife.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954763-462b7aee-ffa2-43b8-b8b3-da68dab5d736.jpg'
     },
     {
         id: nanoid(10),
@@ -47,7 +47,7 @@ const grains = [
         bakingCharacteristics: "Performs well in bread, pizza dough, bagels, crackers, muffins, and biscuits.",
         history: "It was originally brought to France by the Romans sometime before Christ and then became a staple flour in the 1900’s.",
         inStock: false,
-        img: "./images/rouge.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954777-5bf0c068-f23e-48fa-9c18-98e89aabad21.jpg'
     },
     {
         id: nanoid(10),
@@ -63,7 +63,7 @@ const grains = [
         bakingCharacteristics: "Performs well in bread, pizza, and pasta. It also does well in muffins, biscuits, pancakes, and pie crusts.",
         history: "It was released to the market in 1972 by Earl Clark after being bred for over eight generations.",
         inStock: true,
-        img: "./images/clarks.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954816-fb8e1fab-25ad-45b6-b529-a81238d0bf0b.jpg'
     },
     {
         id: nanoid(10),
@@ -79,7 +79,7 @@ const grains = [
         bakingCharacteristics: "Performs well in tortillas, pasta, pie crusts, cookies, and biscuits.",
         history: "It is one of the oldest wheat varieties in North America, having been grown in Sonora, Mexico for at least 150 years.",
         inStock: true,
-        img: "./images/sonora.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954842-96dba141-f2ce-410a-80cd-403e38257aab.jpg'
     },
     {
         id: nanoid(10),
@@ -95,7 +95,7 @@ const grains = [
         bakingCharacteristics: "While high in protein, it has weak gluten, so bread dough made with einkorn wheat requires less water, more folds, and a shorter fermentation. It can be used in muffins, pancakes, and other baked goods without much difficulty.",
         history: "It is the oldest cultivated wheat in the world and has its origins in Turkey. About 10,500 years before present.",
         inStock: true,
-        img: "./images/einkorn.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149968717-bbe8f47d-7bc3-4e1e-b7ba-ae9d97f1f95c.jpg'
     },
     {
         id: nanoid(10),
@@ -111,7 +111,7 @@ const grains = [
         bakingCharacteristics: "While high in protein, it has weak gluten, so bread dough made with emmer wheat requires less water, more folds, and a shorter fermentation. It can be used easily in pasta, muffins, pancakes, crackers, and cookies.",
         history: "It is an ancient wheat variety with its origins in the Fertile Crescent. About 10,000 years before present.",
         inStock: true,
-        img: "./images/emmer.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954893-b1e4d681-573f-419f-aa4a-2a8c6589d8d6.jpg'
     },
     {
         id: nanoid(10),
@@ -127,7 +127,7 @@ const grains = [
         bakingCharacteristics: "Performs well as a porridge or use its sandy-textured flour in bread, crackers, pasta, pie crusts, cookies, and pancakes.",
         history: "It is an ancient wheat variety that probably originated in the Fertile Crescent. Made popular in the US by farmer Bob Quinn.",
         inStock: true,
-        img: "./images/kamut.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954910-8b5209bc-eea5-4963-91bc-9dc659e0285c.jpg'
     },
     {
         id: nanoid(10),
@@ -143,7 +143,7 @@ const grains = [
         bakingCharacteristics: "Bread dough made with spelt is extensible and silky and can tolerate more water and longer fermentation times than einkorn or emmer but less than modern wheats. Spelt makes great breads, pie crusts, biscuits, pancakes, muffins, and cookies.",
         history: "It is an ancient wheat variety with its origins in the Middle East. About 7,000 years before present.",
         inStock: true,
-        img: "./images/spelt.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954928-4aa67753-31b2-4ad5-bfe2-b9a59b1ff8f6.jpg'
     },
     {
         id: nanoid(10),
@@ -159,7 +159,7 @@ const grains = [
         bakingCharacteristics: "While rye flour does have the two proteins that make gluten, it will not make good artisan loaves, instead you can make delicious, moist pan loaves. It can also be used in brownies, cookies, and pancakes.",
         history: "Rye is closely related to barley and wheat and originated in Turkey. Today it is very popular in eastern, central, and northern Europe.",
         inStock: true,
-        img: "./images/rye.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149955014-c04c395e-3b0f-49e3-a818-d6f377202b6d.jpg'
     },
     {
         id: nanoid(10),
@@ -175,7 +175,7 @@ const grains = [
         bakingCharacteristics: "Can be used whole in soup, porridge, and risotto. Its flour can be added to cookies, pancakes, muffins, and crackers for its rich flavor.",
         history: "It is one of the oldest cultivated grass crops and it has its roots in the Fertile Crescent.",
         inStock: true,
-        img: "./images/barley.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149955005-be5dcae2-47b7-4ab1-b022-553ff5835224.jpg'
     },
     {
         id: nanoid(10),
@@ -191,7 +191,7 @@ const grains = [
         bakingCharacteristics: "It can be used in most all baking applications in both bread and pastry.",
         history: "This all purpose flour was roller milled and sifted by Heartland Mill in Marienthal, KS. It is unmalted and contains only heirloom Turkey Red wheat, which is the variety brought to Kansas by Mennonite immigrants in the early 1870s. It is wheat from a single field on a single farm, hence the protein percentage and other qualities may vary from lot to lot as is normal for any natural product.",
         inStock: true,
-        img: "./images/allPurpose.jpg"
+        img: 'https://user-images.githubusercontent.com/80644408/149954989-ffcdaf2b-4523-4558-a33e-664ea744b8e8.jpg'
     },
     {
         id: nanoid(10),
@@ -207,7 +207,7 @@ const grains = [
         bakingCharacteristics: "It is gluten-free and can be used whole to make porridge or as flour in pancakes, muffins, and cookies.",
         history: "Buckwheat was first domesticated about 8,000 years ago in Southeast Asia. These small, triangular grain-like seeds are not related to wheat, but instead to sorrel and rhubarb.",
         inStock: true,
-        img: "./images/buckwheat.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955129-937f7467-b99c-4ce3-aa52-4387d25c72b7.png'
     },
     {
         id: nanoid(10),
@@ -223,7 +223,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico. Blue corn is a type of flint corn and has long been cultivated by the Hopi in the Southwest United States.",
         inStock: true,
-        img: "./images/blue.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955090-3c7cbf91-2d66-4e67-81d0-6ace0e896e42.png'
     },
     {
         id: nanoid(10),
@@ -239,7 +239,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico.",
         inStock: true,
-        img: "./images/green.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955082-25780767-615a-4fa2-aadd-039b3412b615.png'
     },
     {
         id: nanoid(10),
@@ -255,7 +255,7 @@ const grains = [
         bakingCharacteristics: "Excellent as polenta or grits, as well as, in tortillas, frybread, cookies, cornbread, and pancakes.",
         history: "Maize, also known as corn, is indigenous to the Americas and was domesticated about 10,000 years ago in southern Mexico.",
         inStock: true,
-        img: "./images/red.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149951771-f666735f-a726-4240-9d3e-4f8cec8fe58d.png'
     },
     {
         id: nanoid(10),
@@ -271,7 +271,7 @@ const grains = [
         bakingCharacteristics: "Millet adds a fun, snap-crackle-pop texture to baked goods. Add it to cookies, muffins, pancakes, breads, etc. It can also be cooked and eaten whole in a salad, etc.",
         history: "It is indigenous to many parts of the world and has been cultivated since about 7,000 years before present.",
         inStock: true,
-        img: "./images/millet.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955142-1a3b3a33-71ca-4971-9b12-0117daaa5842.png'
     },
     {
         id: nanoid(10),
@@ -287,7 +287,7 @@ const grains = [
         bakingCharacteristics: "It is a good source of magnesium, phosphorus, selenium, thiamine, niacin, vitamin B6, manganese, and is high in dietary fiber. It can be used in cookies, pancakes, muffins, breads, etc.",
         history: "It was first domesticated in the Yangtze River basin in China about 11,000 years before present.",
         inStock: true,
-        img: "./images/rice.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955285-69fd21d2-95d9-4893-b4f7-14835bac3d3e.png'
     },
     {
         id: nanoid(10),
@@ -303,7 +303,7 @@ const grains = [
         bakingCharacteristics: "They are high in protein, dietary fiber, B-vitamins, and other essential minerals. Performs well in cookies, pancakes, and muffins.",
         history: "Oats were first grown in the Fertile Crescent, but are widely grown in Northwestern Europe today.",
         inStock: true,
-        img: "./images/oat.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955236-2ca90035-15cf-4624-a096-34a8bd4c24c0.png'
     },
     {
         id: nanoid(10),
@@ -319,7 +319,7 @@ const grains = [
         bakingCharacteristics: "Performs well in injera, pancakes, crusts, cookies, muffins, etc.",
         history: "It is an ancient grain from Ethiopia and Eritrea, and comprises the staple grain of their cuisines. It is a fine grain—about the size of a poppy seed—that comes in a variety of colors, from white and red to dark brown.",
         inStock: true,
-        img: "./images/teff.png"
+        img: 'https://user-images.githubusercontent.com/80644408/149955261-56b8788c-c773-4f3e-8a4b-d095bb319947.png'
     }
 ]
 
